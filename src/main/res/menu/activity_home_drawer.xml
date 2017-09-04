@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/hos"
+            android:icon="@drawable/hos"
+            android:title="Hospital" />
+        <item
+            android:id="@+id/pol"
+            android:icon="@drawable/police"
+            android:title="Police" />
+        <item
+            android:id="@+id/exfire"
+            android:icon="@drawable/extinguisher"
+            android:title="Fire Stations" />
+        <item
+            android:id="@+id/cross"
+            android:icon="@drawable/redcross"
+            android:title="Redcross" />
+        <item
+            android:id="@+id/prof"
+            android:icon="@drawable/ava"
+            android:title="Profile" />
+        <item
+            android:id="@+id/aboutus"
+            android:icon="@drawable/about"
+            android:title="About" />
+    </group>
+
+</menu>

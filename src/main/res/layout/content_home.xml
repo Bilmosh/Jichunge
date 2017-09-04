@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bill.jichunge.Home"
+    android:background="@drawable/wooden"
+    tools:showIn="@layout/app_bar_home">
+
+
+    <Button
+        android:id="@+id/btnHos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/hos"
+        android:text="Hospital"
+        android:layout_marginEnd="11dp"
+        android:layout_above="@+id/btnFir"
+        android:layout_toStartOf="@+id/btnPol" />
+
+    <Button
+        android:id="@+id/btnPol"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:drawableTop="@drawable/police"
+        android:layout_alignTop="@+id/btnHos"
+        android:layout_marginEnd="62dp"
+        android:text="Police" />
+
+    <Button
+        android:id="@+id/btnFir"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/extinguisher"
+        android:text="Fire Stations"
+        android:layout_above="@+id/btnPro"
+        android:layout_alignStart="@+id/btnHos" />
+
+    <Button
+        android:id="@+id/btnRed"
+
+        android:layout_width="wrap_content"
+        android:drawableTop="@drawable/redcross"
+        android:layout_height="wrap_content"
+        android:text="RedCross"
+        android:layout_alignBaseline="@+id/btnFir"
+        android:layout_alignBottom="@+id/btnFir"
+        android:layout_alignStart="@+id/btnPol" />
+
+    <Button
+        android:id="@+id/btnPro"
+
+        android:drawableTop="@drawable/ava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnFir" />
+
+    <Button
+        android:id="@+id/btnAbt"
+
+        android:layout_width="wrap_content"
+        android:drawableTop="@drawable/about"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:layout_alignBaseline="@+id/btnPro"
+        android:layout_alignBottom="@+id/btnPro"
+        android:layout_alignStart="@+id/btnRed" />
+</RelativeLayout>
